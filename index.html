@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="визитка резюме ТФ ОМС Миловидов" />
     <meta name="description" content="Сайт визитка. Миловидов В.В." />
-    <link rel="stylesheet" href="styles.css" />
     <title>Сайт визитка</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="content">
+    <div class="container">
       <div class="info">
         <img src="avatar.jpg" width="250" />
         <div class="info-text">
@@ -19,12 +19,14 @@
             информационно-аналитических технологий ТФ ОМС Кузбасса
           </p>
           <p>Занимаюсь разработкой проектов на JavaScript,PHP</p>
-          <h3>Список социальных сетей</h3>
-          <a href="https://t.me/angry_polecat" target="_blank">Telegram</a> |
-          <a href="https://vk.com/id260208581" target="_blank">В Контакте</a>
+          <div class="social-media">
+            <h3>Список социальных сетей</h3>
+            <a href="https://t.me/angry_polecat" target="_blank">Telegram</a> |
+            <a href="https://vk.com/id260208581" target="_blank">В Контакте</a>
+          </div>
         </div>
       </div>
-      <div class="partition hobby">
+      <div class="my-hobbies partition">
         <h3>Мои хобби</h3>
         <ul>
           <li>Кроссфит</li>
@@ -32,7 +34,7 @@
           <li>Автомобили</li>
         </ul>
       </div>
-      <div class="partition work-experience">
+      <div class="experience partition">
         <h3>Опыт работы</h3>
         <table>
           <thead>
@@ -61,28 +63,30 @@
           </tbody>
         </table>
       </div>
-      <div class="partition feedback-form">
+      <div class="contact-with-me partition">
         <h3>Связаться со мной</h3>
-        <form>
-          <div>
-            <label for="name">Имя:</label><br />
-            <input id="name" type="text" placeholder="Введите имя" />
-          </div>
-          <div>
-            <label for="email">Email:</label><br />
-            <input id="email" type="email" placeholder="Введите email" />
-          </div>
-          <div>
-            <label for="message">Сообщение:</label><br />
-            <textarea
-              id="message"
-              cols="30"
-              rows="5"
-              placeholder="Ваше сообщение..."
-            ></textarea>
-          </div>
-          <button>Отправить сообщение</button>
-        </form>
+        <div class="forma">
+          <form>
+            <div>
+              <label for="name">Имя:</label><br />
+              <input id="name" type="text" placeholder="Введите имя" />
+            </div>
+            <div>
+              <label for="email">Email:</label><br />
+              <input id="email" type="email" placeholder="Введите email" />
+            </div>
+            <div>
+              <label for="message">Сообщение:</label><br />
+              <textarea
+                id="message"
+                cols="30"
+                rows="5"
+                placeholder="Ваше сообщение..."
+              ></textarea>
+            </div>
+            <button class="btn">Отправить сообщение</button>
+          </form>
+        </div>
       </div>
     </div>
   </body>
