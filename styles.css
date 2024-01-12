@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: #003366;
+  color: white;
+}
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.content {
+  margin: 0px auto;
+  width: 40%;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+}
+
+.info h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.info img {
+  margin-right: 20px;
+}
+
+.info p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.info a {
+  color: gold;
+  cursor: pointer;
+}
+
+.info a:hover {
+  color: lightsalmon;
+}
+
+.partition {
+  padding: 10px;
+  margin: 10px;
+}
+
+.hobby {
+}
+
+.hobby li {
+  padding: 5px;
+}
+
+.work-experience {
+}
+
+.work-experience tr {
+  height: 30px;
+}
+
+.work-experience th {
+  border-bottom: 1px solid white;
+}
+
+.work-experience td {
+  text-align: left;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.work-experience table {
+  width: 100%;
+}
+
+.feedback-form {
+}
+
+.feedback-form form {
+  width: 410px;
+  margin: 0 auto;
+}
+
+.feedback-form label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.feedback-form input {
+  height: 30px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 400px;
+}
+
+.feedback-form textarea {
+  resize: none;
+}
+
+.feedback-form button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: blanchedalmond;
+  cursor: pointer;
+  height: 40px;
+  border: none;
+  width: 410px;
+}
+
+.feedback-form button:hover {
+  background-color: khaki;
+}
