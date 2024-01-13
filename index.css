@@ -49,6 +49,12 @@ a:hover {
   flex-direction: row;
 }
 
+.info p,
+.partition,
+.social-media {
+  min-width: 300px;
+}
+
 .info p {
   font-style: italic;
   padding: 5px;
@@ -59,11 +65,29 @@ a:hover {
   padding: 5px;
 }
 
+.social-media ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media ul li {
+  margin-right: 10px;
+  border-right: 1px solid white;
+  padding-right: 10px;
+}
+
+.social-media ul li:last-child {
+  border-right: none;
+}
+
 .info img {
   margin: 10px;
   border-radius: 20px;
   border: 3px solid white;
   box-shadow: 5px 5px 14px rgba(255, 255, 255, 0.25);
+  width: 200px;
+  height: 200px;
 }
 
 .partition {
@@ -93,9 +117,16 @@ a:hover {
   padding: 5px;
 }
 
-.forma {
-  width: 325px;
-  margin: 0 auto;
+.contact-with-me {
+}
+
+.contact-with-me .forma {
+  width: 650px;
+  margin: auto;
+}
+
+.contact-with-me .forma div {
+  display: inline-block;
 }
 
 .contact-with-me label {
@@ -116,4 +147,41 @@ a:hover {
 
 .contact-with-me textarea {
   resize: none;
+  width: 625px;
+}
+
+.contact-with-me .box-button {
+  width: 100%;
+  display: block;
+}
+
+.contact-with-me .box-button button {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .info {
+    display: block;
+  }
+
+  .info img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .contact-with-me .forma div {
+    display: block;
+  }
+
+  .contact-with-me textarea {
+    resize: none;
+    width: 300px;
+  }
+
+  .contact-with-me .box-button {
+    width: 300px;
+    display: block;
+  }
 }
